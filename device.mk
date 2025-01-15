@@ -56,6 +56,7 @@ PRODUCT_ENABLE_UFFD_GC := true
 
 # Audio
 PRODUCT_PACKAGES += \
+    android.hardware.audio.sounddose-vendor-impl \
     android.hardware.audio.service
 
 PRODUCT_PACKAGES += \
