@@ -200,7 +200,6 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/props/vendor.prop
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/props/system.prop
 
 # Recovery
-$(call soong_config_set, ufsbsg, ufsframework, bsg)
 BOARD_EXCLUDE_KERNEL_FROM_RECOVERY_IMAGE := true
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
