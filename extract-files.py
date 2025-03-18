@@ -82,6 +82,9 @@ blob_fixups: blob_fixups_user_type = {
 
     'vendor/etc/seccomp_policy/c2audio.vendor.ext-arm64.policy': blob_fixup()
         .add_line_if_missing('setsockopt: 1'),
+
+    'vendor/etc/sensors/hals.conf': blob_fixup()
+        .add_line_if_missing('sensors.xiaomi.v2.so'),
 }
 
 module = ExtractUtilsModule(
