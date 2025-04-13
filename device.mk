@@ -521,9 +521,6 @@ PRODUCT_PACKAGES += \
     libandroid_runtime_lazy.vendor \
     librmnetctl
 
-PRODUCT_PACKAGES += \
-    rfs_msm_mpss_readonly_mbnconfig_symlink
-
 # RemovePackages
 PRODUCT_PACKAGES += \
     RemovePackages
