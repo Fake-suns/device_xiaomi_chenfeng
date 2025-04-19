@@ -214,6 +214,11 @@ BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 
+# Sensors
+SOONG_CONFIG_NAMESPACES += XIAOMI_SENSORS
+SOONG_CONFIG_XIAOMI_SENSORS += UDFPS_PATH
+SOONG_CONFIG_XIAOMI_SENSORS_UDFPS_PATH := /sys/class/touch/touch_dev/fod_press_status,/sys/devices/platform/goodix_ts.0/gesture/fod_en
+
 # Vendor security patch
 VENDOR_SECURITY_PATCH := 2025-02-01
 

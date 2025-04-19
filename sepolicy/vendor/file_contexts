@@ -69,7 +69,6 @@
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint-service\.peridot u:object_r:hal_fingerprint_default_exec:s0
 /data/vendor/misc/mi_fp(/.*)? u:object_r:vendor_fingerprint_data_file:s0
 /sys/devices/virtual/touch/tp_dev/fod_status u:object_r:sysfs_tp_fodstatus:s0
-/sys/devices/virtual/touch/touch_dev/fod_press_status u:object_r:sysfs_tp_fodstatus:s0
 /data/vendor/fpc(/.*)? u:object_r:vendor_fingerprint_data_file:s0
 /mnt/vendor/persist/goodix(/.*)? u:object_r:vendor_fingerprint_data_file:s0
 /dev/goodix_fp u:object_r:vendor_fingerprint_device:s0
@@ -113,6 +112,8 @@
 /(vendor|odm)/etc/init.panel_info.sh u:object_r:vendor_touch_init_shell_exec:s0
 /sys/devices/virtual/touch/touch_dev/ear_sensor u:object_r:sysfs_tp_virtual_prox:s0
 /sys/devices/virtual/touch/touch_dev/palm_sensor u:object_r:sysfs_tp_virtual_prox:s0
+/sys/devices/platform/goodix_ts.0/gesture/fod_en u:object_r:sysfs_touchpanel:s0
+/sys/devices/virtual/touch/touch_dev/fod_press_status u:object_r:sysfs_touchpanel:s0
 
 # Touch Sampling
 /sys/devices/platform/goodix_ts.0/switch_report_rate                                               u:object_r:sysfs_htsr:s0

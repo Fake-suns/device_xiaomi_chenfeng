@@ -4,6 +4,8 @@ on init
 on boot
     chown system system /sys/class/touch/touch_dev/fod_press_status
     chmod 0644 /sys/class/touch/touch_dev/fod_press_status
+    chown system system /sys/devices/platform/goodix_ts.0/gesture/fod_en
+    chmod 0660 /sys/devices/platform/goodix_ts.0/gesture/fod_en
     chmod 0666 /dev/input/event1
 
     chown system system /dev/input/event2
