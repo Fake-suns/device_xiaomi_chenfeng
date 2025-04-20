@@ -25,3 +25,6 @@ genfscon sysfs /devices/platform/goodix_ts.0/wakeup u:object_r:sysfs_wakeup:s0
 # UDFPS Long Press Sensor
 genfscon sysfs /devices/platform/goodix_ts.0/gesture/fod_en                                                  u:object_r:sysfs_touchpanel:s0
 genfscon sysfs /devices/virtual/touch/touch_dev/fod_press_status                                             u:object_r:sysfs_touchpanel:s0
+
+# Touch Sampling
+genfscon sysfs /devices/platform/goodix_ts.0/goodix_ts_report_rate                                               u:object_r:vendor_sysfs_htsr:s0

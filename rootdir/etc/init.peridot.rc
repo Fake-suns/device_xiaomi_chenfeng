@@ -28,6 +28,10 @@ on boot
     # Allow system to modify charging current
     chown system system /sys/class/power_supply/battery/constant_charge_current
     chmod 0664 /sys/class/power_supply/battery/constant_charge_current
+
+    # Touch
+    chown system system /sys/devices/platform/goodix_ts.0/goodix_ts_report_rate
+    chmod 0664 /sys/devices/platform/goodix_ts.0/goodix_ts_report_rate
  
 # Migrate tasks again in case kernel threads are created during boot
 on property:sys.boot_completed=1
