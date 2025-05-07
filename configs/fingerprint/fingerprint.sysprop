@@ -1,6 +1,6 @@
 # fingerprint.sysprop
 # module becomes static class (Java) / namespace (C++) for serving API
-module: "android.fingerprint.peridot.FingerprintHalProperties"
+module: "android.fingerprint.chenfeng.FingerprintHalProperties"
 owner: Vendor
 
 # type of fingerprint sensor

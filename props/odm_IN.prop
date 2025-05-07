@@ -1,4 +1,4 @@
-bluetooth.device.default_name=POCO F6
-ro.product.odm.marketname=POCO F6
-ro.product.odm.model=24069PC21I
-ro.product.odm.name=peridot_in
+bluetooth.device.default_name=Xiaomi Civi 4 Pro
+ro.product.odm.marketname=Xiaomi Civi 4 Pro
+ro.product.odm.model=24053PY09I
+ro.product.odm.name=chenfeng_in

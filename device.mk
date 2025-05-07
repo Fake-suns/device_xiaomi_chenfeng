@@ -23,7 +23,7 @@ $(call inherit-product, packages/modules/Virtualization/apex/product_packages.mk
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
 
 # Inherit from the MiuiCamera setup
-$(call inherit-product-if-exists, device/xiaomi/peridot-miuicamera/device.mk)
+$(call inherit-product-if-exists, device/xiaomi/chenfeng-miuicamera/device.mk)
 
 # Call the BCR setup
 $(call inherit-product-if-exists, vendor/bcr/bcr.mk)
@@ -219,7 +219,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint-service.peridot
+    android.hardware.biometrics.fingerprint-service.chenfeng
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
@@ -294,7 +294,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     init.qcom.rc \
-    init.peridot.rc \
+    init.chenfeng.rc \
     init.qti.kernel.rc \
     init.recovery.qcom.rc \
     init.target.rc \
@@ -452,21 +452,21 @@ PRODUCT_COPY_FILES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    ApertureOverlayPeridot \
-    CarrierConfigOverlayPeridot \
-    FrameworkOverlayPeridot \
-    LineageSDKOverlayPeridot \
-    NfcOverlayPeridot \
-    SecureElementOverlayPeridot \
-    SettingsOverlayPeridot \
-    SettingsProviderOverlayPeridotPOCO \
-    SettingsProviderOverlayPeridotRedmi \
-    SystemUIOverlayPeridot \
-    TelephonyOverlayPeridot \
-    FastChargePeridot \
-    WifiOverlayPeridot \
-    WifiOverlayPeridotPOCO \
-    WifiOverlayPeridotRedmi
+    ApertureOverlayChenfeng \
+    CarrierConfigOverlayChenfeng \
+    FrameworkOverlayChenfeng \
+    LineageSDKOverlayChenfeng \
+    NfcOverlayChenfeng \
+    SecureElementOverlayChenfeng \
+    SettingsOverlayChenfeng \
+    SettingsProviderOverlayChenfengPOCO \
+    SettingsProviderOverlayChenfengRedmi \
+    SystemUIOverlayChenfeng \
+    TelephonyOverlayChenfeng \
+    FastChargeChenfeng \
+    WifiOverlayChenfeng \
+    WifiOverlayChenfengPOCO \
+    WifiOverlayChenfengRedmi
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -698,4 +698,4 @@ PRODUCT_BOOT_JARS += \
     WfdCommon
 
 # Vendor
-$(call inherit-product, vendor/xiaomi/peridot/peridot-vendor.mk)
+$(call inherit-product, vendor/xiaomi/chenfeng/chenfeng-vendor.mk)

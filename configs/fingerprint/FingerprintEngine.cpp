@@ -26,7 +26,7 @@
 #include "util/CancellationSignal.h"
 #include "util/Util.h"
 
-using namespace ::android::fingerprint::peridot;
+using namespace ::android::fingerprint::chenfeng;
 using ::android::base::ParseInt;
 
 namespace aidl::android::hardware::biometrics::fingerprint {

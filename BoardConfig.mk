@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/xiaomi/peridot
+DEVICE_PATH := device/xiaomi/chenfeng
 
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
@@ -77,7 +77,7 @@ DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/hidl/manifest_vendor.xml
 ODM_MANIFEST_FILES := $(DEVICE_PATH)/configs/hidl/manifest_odm.xml
 
 # Inherit from proprietary files for miuicamera
--include device/xiaomi/peridot-miuicamera/BoardConfig.mk
+-include device/xiaomi/chenfeng-miuicamera/BoardConfig.mk
 
 # Kernel
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
@@ -96,8 +96,8 @@ BOARD_MKBOOTIMG_INIT_ARGS += --header_version $(BOARD_INIT_BOOT_HEADER_VERSION)
 
 BOARD_KERNEL_CMDLINE := \
     video=vfb:640x400,bpp=32,memsize=3072000 \
-    swinfo.fingerprint=peridot:$(AOSP_VERSION) \
-    mtdoops.fingerprint=peridot:$(AOSP_VERSION)
+    swinfo.fingerprint=chenfeng:$(AOSP_VERSION) \
+    mtdoops.fingerprint=chenfeng:$(AOSP_VERSION)
 
 BOARD_BOOTCONFIG := \
     androidboot.hardware=qcom \
@@ -108,7 +108,7 @@ BOARD_BOOTCONFIG := \
     androidboot.hypervisor.protected_vm.supported=false
 
 # Kernel (prebuilt)
-PREBUILT_PATH := device/xiaomi/peridot-kernel
+PREBUILT_PATH := device/xiaomi/chenfeng-kernel
 TARGET_NO_KERNEL_OVERRIDE := true
 TARGET_KERNEL_SOURCE := $(PREBUILT_PATH)/kernel-headers
 BOARD_PREBUILT_DTBIMAGE_DIR := $(PREBUILT_PATH)/images/dtbs/
@@ -117,8 +117,8 @@ PRODUCT_COPY_FILES += \
 	$(PREBUILT_PATH)/images/kernel:kernel
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_peridot
-TARGET_RECOVERY_DEVICE_MODULES := libinit_peridot
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_chenfeng
+TARGET_RECOVERY_DEVICE_MODULES := libinit_chenfeng
 
 # Kernel modules
 DLKM_MODULES_PATH := $(PREBUILT_PATH)/modules/vendor_dlkm
@@ -269,4 +269,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Vendor
-include vendor/xiaomi/peridot/BoardConfigVendor.mk
+include vendor/xiaomi/chenfeng/BoardConfigVendor.mk

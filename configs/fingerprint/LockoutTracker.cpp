@@ -19,7 +19,7 @@
 #include "Fingerprint.h"
 #include "util/Util.h"
 
-using namespace ::android::fingerprint::peridot;
+using namespace ::android::fingerprint::chenfeng;
 
 namespace aidl::android::hardware::biometrics::fingerprint {
 

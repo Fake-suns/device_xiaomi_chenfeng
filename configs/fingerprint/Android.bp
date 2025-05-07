@@ -5,11 +5,11 @@
 //
 
 cc_binary {
-    name: "android.hardware.biometrics.fingerprint-service.peridot",
-    init_rc: ["android.hardware.biometrics.fingerprint-service.peridot.rc"],
-    vintf_fragments: ["android.hardware.biometrics.fingerprint-service.peridot.xml"],
+    name: "android.hardware.biometrics.fingerprint-service.chenfeng",
+    init_rc: ["android.hardware.biometrics.fingerprint-service.chenfeng.rc"],
+    vintf_fragments: ["android.hardware.biometrics.fingerprint-service.chenfeng.xml"],
     header_libs: [
-        "peridot_fingerprint_headers",
+        "chenfeng_fingerprint_headers",
     ],
     srcs: [
         "FingerprintConfig.cpp",
@@ -32,21 +32,21 @@ cc_binary {
         "liblog",
     ],
     whole_static_libs: [
-        "libandroid.hardware.biometrics.fingerprint.peridot.Props",
+        "libandroid.hardware.biometrics.fingerprint.chenfeng.Props",
     ],
     relative_install_path: "hw",
     vendor: true,
 }
 
 sysprop_library {
-    name: "android.hardware.biometrics.fingerprint.peridot.Props",
+    name: "android.hardware.biometrics.fingerprint.chenfeng.Props",
     srcs: ["fingerprint.sysprop"],
     property_owner: "Vendor",
     vendor: true,
 }
 
 cc_library_headers {
-    name: "peridot_fingerprint_headers",
+    name: "chenfeng_fingerprint_headers",
     export_include_dirs: ["include"],
     header_libs: ["libhardware_headers"],
     vendor: true,
