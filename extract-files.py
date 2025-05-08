@@ -49,6 +49,9 @@ blob_fixups: blob_fixups_user_type = {
     ): blob_fixup()
         .add_needed('libwrapper_dlengine_shim.so'),
 
+    'odm/lib64/camera/components/com.mi.node.videobokeh.so': blob_fixup()
+        .add_needed('libmibokeh_shim.so'),
+
     'system_ext/lib64/libwfdmmsrc_system.so': blob_fixup()
         .add_needed('libgui_shim.so'),
 
