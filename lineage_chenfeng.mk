@@ -33,3 +33,17 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
+#Enable Blur
+TARGET_ENABLE_BLUR := true
+
+# Maintainer name
+AXION_MAINTAINER := FGod47
+
+# Processor name 
+AXION_PROCESSOR := Snapdragon_8s_Gen_3 
+
+# Define rear camera specs (multiple sensors supported)
+AXION_CAMERA_REAR_INFO := 50,50,12  
+
+# Define front camera specs
+AXION_CAMERA_FRONT_INFO := 32,32s
