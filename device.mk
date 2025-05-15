@@ -1,5 +1,6 @@
+
 #
-# Copyright (C) 2024 The LineageOS Project
+# Copyright (C) 2024 The aospOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -354,9 +355,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_VENDOR_LINKER_CONFIG_FRAGMENTS += \
     $(LOCAL_PATH)/configs/linker.config.json
 
-# Lineage Health
+# aosp Health
 PRODUCT_PACKAGES += \
-    vendor.lineage.health-service.default
+    vendor.aosp.health-service.default
 
 # Logging
 SPAMMY_LOG_TAGS := \
@@ -463,7 +464,7 @@ PRODUCT_PACKAGES += \
     ApertureOverlayChenfeng \
     CarrierConfigOverlayChenfeng \
     FrameworkOverlayChenfeng \
-    LineageSDKOverlayChenfeng \
+    aospSDKOverlayChenfeng \
     NfcOverlayChenfeng \
     SecureElementOverlayChenfeng \
     SettingsOverlayChenfeng \

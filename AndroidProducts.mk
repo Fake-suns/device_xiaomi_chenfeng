@@ -1,13 +1,13 @@
 #
-# Copyright (C) 2024 The LineageOS Project
+# Copyright (C) 2024 The aospOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_chenfeng.mk
+    $(LOCAL_DIR)/aosp_chenfeng.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_chenfeng-eng \
-    lineage_chenfeng-userdebug \
-    lineage_chenfeng-user
+    aosp_chenfeng-eng \
+    aosp_chenfeng-userdebug \
+    aosp_chenfeng-user
