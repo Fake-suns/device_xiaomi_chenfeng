@@ -357,7 +357,7 @@ PRODUCT_VENDOR_LINKER_CONFIG_FRAGMENTS += \
 
 # aosp Health
 PRODUCT_PACKAGES += \
-    vendor.aosp.health-service.default
+    vendor.lineage.health-service.default
 
 # Logging
 SPAMMY_LOG_TAGS := \
@@ -464,7 +464,7 @@ PRODUCT_PACKAGES += \
     ApertureOverlayChenfeng \
     CarrierConfigOverlayChenfeng \
     FrameworkOverlayChenfeng \
-    aospSDKOverlayChenfeng \
+    LineageSDKOverlayChenfeng \
     NfcOverlayChenfeng \
     SecureElementOverlayChenfeng \
     SettingsOverlayChenfeng \
@@ -697,8 +697,8 @@ PRODUCT_PACKAGES += \
     vendor.display.config@2.0 \
     vendor.qti.hardware.display.config-V5-ndk
 
-PRODUCT_BOOT_JARS += \
-    WfdCommon
+#PRODUCT_BOOT_JARS += \
+#    WfdCommon
 
 # Vendor
 $(call inherit-product, vendor/xiaomi/chenfeng/chenfeng-vendor.mk)

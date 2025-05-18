@@ -5,9 +5,10 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_chenfeng.mk
+    $(LOCAL_DIR)/lineage_chenfeng.mk
+
 
 COMMON_LUNCH_CHOICES := \
-    aosp_chenfeng-eng \
-    aosp_chenfeng-userdebug \
-    aosp_chenfeng-user
+    lineage_chenfeng-eng \
+    lineage_chenfeng-userdebug \
+    lineage_chenfeng-user

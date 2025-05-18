@@ -9,12 +9,20 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit from chenfeng device
 $(call inherit-product, device/xiaomi/chenfeng/device.mk)
 
-PRODUCT_NAME := aosp_chenfeng
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_GAPPS_ARCH := arm64
+IS_PHONE := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := false
+DERPFEST_BUILD_TYPE := Official
+DERPFEST_BUILD_VARIANT := Stable
+EXTRA_UDFPS_ICONS := true
+
+PRODUCT_NAME := derp_chenfeng
 PRODUCT_DEVICE := chenfeng
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := POCO
